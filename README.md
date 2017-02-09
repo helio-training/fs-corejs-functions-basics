@@ -1,4 +1,4 @@
-# Assignment - Define and use functions 
+ Assignment - Define and use functions 
 
 > Function expressions, declarations, and arguments
 
@@ -136,9 +136,10 @@ person.greet();
 
 ### Function Parameters / Arguments
 
-Parameters are pieces of the function that are between the `()` in a function.  A function can have a variable amount of parameters.  The other oddity is the number of functional parameters doesn't dictate which function/methode is called (Java being an example which allows method overloading).  JS doesn't allow method overloading. Meaning, you can't define a function with more parameters below an already defined function.  This will result in the function being ovewritten with the function below.
+Recall that javascript is an abstraction - the computer determinew how to interpret the code via compiling and executing your javascript code.  The abstracted components inside the `()` of a function are called the Parameters. In javascript, a function can have an unlimited number of parameters.
+Another oddity is the number of functional parameters doesn't dictate which function/method is called.   If this makes sense, great but if you come with experience from another programming language (such as java), you need to recognize that javscript doesn't allow method overloading. This means that you can't simply add more parameters below an already defined function.  If you try this, javascript will ignore the first version - the javascript engine simply 'ignores' the first version you wrote and compiles the last function declaration it reads.
 
-When you call a function, the types passed into the function are called arguments. 
+When you call this function, the variables that replace the abstracted parameters are termed this function's arguments. 
 
 ```js
 const person = {
